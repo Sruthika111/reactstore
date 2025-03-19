@@ -1,0 +1,8 @@
+.App-Header-Row{
+    display:flex;
+    justify-content: space-between;
+    background-color:sandybrown;
+    padding: 15px;
+    font-size: large;
+   
+}
