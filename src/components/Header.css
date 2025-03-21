@@ -1,8 +1,8 @@
 .App-Header-Row{
     display:flex;
     justify-content: space-between;
-    background-color:lightskyblue;
-    padding: 15px;
+    background-color:aqua;
+    padding: 10px;
     font-size: large;
-   
+    font-style: oblique;
 }
