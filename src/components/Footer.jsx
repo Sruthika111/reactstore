@@ -2,7 +2,7 @@ export default function Footer(){
     return(
         <div>
             <hr></hr>
-            <h3 style={{ textAlign: "center" }}>@Copyright issue.All rights reserved.</h3>
+            <marquee style={{ textAlign: "center" ,fontSize:"24px",backgroundColor:'silver'}}>@Copyright issue.All rights reserved.</marquee>
         </div>
     );
 }
