@@ -3,6 +3,7 @@ import "./Products.css";
 import {appContext} from "../App";
 import {useContext} from "react";
 export default function Products(){
+  const NAME=process.env.REACT_APP_NAME
     const { user, products, cart, setCart  } = useContext(appContext);
     const addToCart = (id) => {
         !cart[id] && setCart({ ...cart, [id]: 1 });
@@ -12,10 +13,11 @@ export default function Products(){
       };
       const decrement = (id) => {
         setCart({ ...cart, [id]: cart[id] - 1 });
+        
       };
     return(
         <div>
-             <h2> {user.name} </h2>
+             <h2>{NAME}</h2>
             <div className="App-Products-Row">
                 {products.map((value,index)=>(
                     <div className="App-Products-Box" key={index}>
